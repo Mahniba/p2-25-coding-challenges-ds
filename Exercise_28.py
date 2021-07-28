@@ -1,18 +1,6 @@
 
 # Calculate the sum of the first 100 prime numbers
-def is_prime(number):
-    if number <= 1:
-        result = False
-    elif number == 2:
-        result = True
-    for i in range(2, number):
-        if number % i == 0:
-            result = False
-            break
-        result = True
-    return result
-
-
+from Exercise_16 import is_prime
 def sum_of_first_n_prime_numbers(n):
     sum = 0
     i = 1
