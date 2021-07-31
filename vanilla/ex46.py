@@ -8,7 +8,7 @@ def largest(arr, n):
     return max
 
 
-arr = [10,20,90,5,8]
+arr = [10, 20, 90, 5, 8]
 n = len(arr)
 Ans = largest(arr, n)
 print("Largest in given array is", Ans)
