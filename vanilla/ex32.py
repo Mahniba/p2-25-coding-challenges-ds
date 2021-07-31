@@ -1,3 +1,4 @@
-text = "my name is vanilla"
-output = text.title()
-print(output)
+def output(text):
+    return text.title()
+
+print(output("small girl"))
