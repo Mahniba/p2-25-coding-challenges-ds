@@ -1,10 +1,8 @@
 import random
-import array
+def shuffle(array):
+    for i in range(len(array)-1):
+        x = random.randint(0, len(array)-1)
+        array[i], array[x] = array[x], array[i]
+    return array
 
-arr = array.array('q', [1, 2, 3, 4, 5, 6])
-
-print("Original array: ", arr)
-
-arr = array.array('q', random.sample(list(arr), 6))
-
-print("Shuffled array: ", arr)
+print(shuffle(["I", "am ", "facing", "difficulties", "with", "this", "exercises"]))
