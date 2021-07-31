@@ -4,11 +4,9 @@ def isPrime(y):
         flag = False
 
     for i in range(2,y):
-        if y % i == 0:
-           flag = False
-        else:
-            flag = True
-        return flag
+        if y != i and y % i == 0:
+           return False
+    return True
 y=int(input("enter a number: "))
 print(isPrime(y))
 
