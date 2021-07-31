@@ -1,15 +1,9 @@
-s = "Hello world welcome"
-word = ''
-maxLen = 0
-maxWord = ''
-for c in s+' ':
-    if c == ' ':
-        if len(word) > maxLen:
-            maxWord = word
-        word = ''
-    else:
-        word += c
-
-
-print("Longest word:", maxWord)
-print("Length:", len(maxWord))
+def longestWord(string):
+    list = string.split()
+    long = 0;
+    for elt in list:
+        if len(elt) > long:
+            long = len(elt)
+            result = elt
+    return result
+print(longestWord("Girl meets the world"))
